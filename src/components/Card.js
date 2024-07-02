@@ -17,7 +17,7 @@ const Card = (props) => {
         }
         else{
 
-            if(likedCourses.length==0){
+            if(likedCourses.length===0){
                 setLikedCourses([course.id]);
             }
             else{
@@ -30,7 +30,7 @@ const Card = (props) => {
         <div className='w-[300px] bg-bgDark bg-opacity-80 rounded-md overflow-hidden'>
 
             <div className='relative'>
-                <img src= {course.image.url}/>
+                <img src= {course.image.url} alt=""/>
 
                 <div className='w-[40px] h-[40px] bg-white rounded-full absolute right-2 bottom-[-2px] 
                 grid place-items-center'>
